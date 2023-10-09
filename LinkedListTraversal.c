@@ -6,6 +6,14 @@ struct Node
     struct Node * next;
     
 };
+void LinkedListTraversal(struct Node *ptr){
+    while (ptr!=NULL)
+    {
+        printf("Elements: %d\n", ptr->data);
+        ptr = ptr->next;
+    }
+    
+}
 int main(){
     struct Node * head;
     struct Node * second;
@@ -29,6 +37,7 @@ int main(){
     // Terminate the list at the third node
     third -> data = 66;
     third -> next = NULL;
+    LinkedListTraversal(head);
 
     return 0;
 }
