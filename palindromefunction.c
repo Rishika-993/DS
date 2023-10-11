@@ -2,7 +2,7 @@ struct Node * palindrome(struct Node *head){
     struct Node *ptr = (struct Node*)malloc(sizeof(struct Node));
     ptr = head;
     int e, s=0,r,p=0;
-    while(ptr!=head){
+    while(ptr!= NULL){
         e = ptr->data;
         s = s*10 + e;
         ptr = ptr->next;
