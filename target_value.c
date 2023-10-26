@@ -17,9 +17,13 @@ int main() {
             s = nums[i] + nums[j];
             if (s == t) {
                 printf("Indices of elements that sum to %d: %d and %d\n", t, i, j);
-                return 0;
+                found = 1; // Set the flag to indicate a pair is found
             }
         }
+    }
+    
+    if (!found) {
+        printf("No pair of elements in the array sum to %d\n", t);
     }
 
     return 0;
