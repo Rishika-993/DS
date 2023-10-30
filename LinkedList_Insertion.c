@@ -26,3 +26,17 @@ struct Node *insertAtindex(struct Node *head, int data, int index){
 }
 head = insertionAtFirst(head, 56, 1);
 // Insert at end
+
+// Insert At End
+struct Node * insertAtEnd(struct Node *head, int data){
+    struct Node * ptr = (struct Node *) malloc(sizeof(struct Node));
+    ptr->data = data;
+    struct Node * p = head;
+ 
+    while(p->next!=NULL){
+        p = p->next;
+    }
+    p->next = ptr;
+    ptr->next = NULL;
+    return head;
+}
