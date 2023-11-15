@@ -6,6 +6,7 @@ struct Queue{
     int r;
     int *arr;
 };
+
 void enqueue(struct Queue *q, int val){
     if(isFull(q)){
         print("overflow");
@@ -15,9 +16,11 @@ void enqueue(struct Queue *q, int val){
         q->arr[q->r] = val;
     }
 }
+
 int dequeue(struct Queue *q){
     int a = -1;
 }
+
 int main(){
     struct Queue q;
     q.size = 10;
