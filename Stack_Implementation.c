@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #define  size 4
 int top = -1, arr[size];
+
 void push(int val){
     if(top == size-1){
         printf("Overflow");
@@ -20,6 +21,7 @@ void pop(){
         top = top-1;
     }
 }
+
 int main(){
     push(23);
     push(8);
