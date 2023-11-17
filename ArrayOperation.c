@@ -9,6 +9,7 @@ int main() {
     for (i = 0; i < n; i++) {
         scanf("%d", &nums[i]);
     }
+    
     for (i = 0; i < n; i++) {
         if(nums[i] == nums[i+1]){
             nums[i]=nums[i]*2;
@@ -23,7 +24,9 @@ int main() {
             n--; 
         }
     } 
+    
     printf("%d",n);
+    
     for (i = 0; i < 5; i++) {
         printf("%d", nums[i]);     
     }
